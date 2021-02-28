@@ -247,7 +247,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+    padding-right: 160px;
+  }
+  #hero {
+    text-align: right;
   }
 }
 
@@ -1126,10 +1129,23 @@ section {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
+.venoframe {
+  height: 75vh;
+}
 
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
+  }
+  .row-in iframe {
+    width: 285px;
+    height: 470px;
+  }
+  .row {
+    margin: 0
+  }
+  .venoframe {
+    height: 67.5vh;
   }
 }
 
@@ -1146,6 +1162,7 @@ section {
 #footer .container {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 3rem;
 }
 
 #footer h3 {
@@ -1154,17 +1171,13 @@ section {
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 0
 }
 
 #footer p {
   font-size: 15;
   font-style: italic;
   padding: 0;
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links {
   margin: 0 0 40px 0;
 }
 
@@ -1199,10 +1212,23 @@ section {
 #footer a {
   color: white;
 }
+#footer .container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .logo img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+}
 
 @media (max-width: 992px) {
   #footer h3 {
     font-size: 24px;
+  }
+  #footer .container {
+    display: block;
   }
 
 }

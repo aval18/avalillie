@@ -4,12 +4,34 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #272829;
 }
 
@@ -18,12 +40,19 @@ a {
 }
 
 a:hover {
-  color: #067ded;
+  color: black;
   text-decoration: none;
+  transition: 0.2s;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+ul {
+  margin: 0;
+}
+p {
+  font-weight: lighter;
 }
 
 /*--------------------------------------------------------------
@@ -242,7 +271,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("../img/tedx-2.jpg") top right no-repeat;
   background-size: cover;
-  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
@@ -389,10 +420,21 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .content {
+  background-color: #f0f2f2;
+}
+.about .row-line {
+  padding-top: 1.5rem;
+  justify-content: space-between;
+}
+.about .content p {
+  margin-bottom: 2rem;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #60899F;
+  margin-bottom: 1.5rem;
 }
 
 .about .content ul {
@@ -412,6 +454,56 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+button {
+  background-color: #60899F;
+  color: white;
+  font-family: 'Raleway';
+  border:none;
+  padding: 0.8rem 3rem;
+  color: white;
+  font-weight: 600;
+}
+button a {
+  color: white;
+  font-weight: 600;
+}
+button a:hover {
+  color: inherit;
+}
+button:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.about .col-lg-4 {
+  padding:0;
+}
+
+@media (min-width: 992px) {
+  .about .content {
+    padding: 3rem!important;
+    padding-bottom: 0!important;
+  }
+  .about .col-lg-4 {
+    height: auto;
+    object-fit: cover;
+  }
+  .about .col-lg-4 {
+    flex: 0 0 40%;
+    max-width: 40%
+  }
+  .about .col-lg-8 {
+    flex: 0 0 58%;
+    max-width: 58%
+  }
+}
+@media (max-width: 992px) {
+  .about .content {
+    padding: 2rem;
+  }
+  .about .row-line {
+    margin: 0 0.5rem;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -46,7 +46,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 ul {
   margin: 0;
@@ -301,6 +301,7 @@ p {
   font-weight: 700;
   line-height: 56px;
   color: #45505b;
+  font-family: "Raleway";
 }
 
 #hero p {
@@ -433,7 +434,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #60899F;
+  color: #45505b;
   margin-bottom: 1.5rem;
 }
 
@@ -1261,9 +1262,9 @@ button:hover {
   font-size: 36px;
   font-weight: 700;
   position: relative;
-  font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0
+  margin: 0;
+  font-family: "Raleway";
 }
 
 #footer p {
